@@ -1,0 +1,195 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    margin: 120px;
+    border-radius: 25px;
+    background: linear-gradient(310deg, rgba(160, 38, 10, 1)0%, rgba(255, 0, 0, 1)100%);
+}
+
+@keyframes slidein {
+    from {
+      rotate: -5deg;
+    }
+  
+    to {
+      rotate: 5deg;
+    }
+  }
+
+body {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.topbar {
+    background-color: rgba(42, 42, 42, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    justify-content: space-between;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: calc( 100% - 2em );
+    z-index: 10;
+}
+
+.topbar h1 {
+    margin-left: 1em;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 2em;
+}
+
+.nav a {
+    /*padding-bottom: 3px;*/
+    color:white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav a:hover {
+    /*padding-bottom: 3px;*/
+    color: #FF0000;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px #FF0000;
+    transition: all 0.2s ease-in-out;
+}
+
+.heyimepson {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3em;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.pres {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    text-overflow:ellipsis;
+    background-size: 0% 100%; 
+    animation: 3s textappear ease-in-out;
+    
+    
+}
+
+.chillimg {
+    width: 19em;
+    animation: 3s infinite alternate slidein ease-in-out;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+
+.about .lselem {
+    display: flex;
+    align-items: center;
+}
+
+.lselem img {
+    padding-right: 1em;
+    width: 1em;
+
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.pf-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pf-card {
+    border-radius: 15px;
+    width: 30%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+#oasis #card-bg{
+    background: center / cover no-repeat url("res/oasis.png");
+    filter: blur(0px);
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+#oasis #card-bg:hover {
+    filter: blur(10px);
+    transition: all 0.2s ease-in-out;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+h1 {
+    font-family: "Montserrat Extrabold";
+}
+
+p {
+    font-family: "Montserrat";
+}
+
+p a {
+    font-weight: bold;
+    color: #FF0000;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+p a:hover {
+    
+    text-decoration: none;
+    text-shadow: 0px 0px 5px #FF0000;
+    transition: all 0.2s ease-in-out;
+}
+
+ul {
+    font-family: "Montserrat Semibold";
+}
+
+.red {
+    color: #FF0000;
+    text-shadow: 0px 0px 5px #FF0000;
+}
+
+.emph {
+    font-size: 150%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
