@@ -1,5 +1,7 @@
 ::-webkit-scrollbar {
     width: 10px;
+	background-color: #2a2a2a;
+	opacity:0;
 }
 ::-webkit-scrollbar-thumb {
     margin: 120px;
@@ -34,26 +36,40 @@
   }
   */
 
-body {
-    background-color: #2a2a2a;
-    color: white;
-    margin: 0px;
+* {
+    box-sizing: border-box;
 }
 
-.topbar {
+main {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+body {
+    background-image: url(res/meshgradient.png);
+    color: white;
+    margin: 0px;
+    background-size: 100% 100%;
+}
+
+.heading {
     background-color: rgba(42, 42, 42, 0.5);
     backdrop-filter: blur(10px);
     position: sticky;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1em;
-    justify-content: space-between;
+    padding: 1em 15% 1em 15%;
     top: 0px;
     left: 0px;
     right: 0px;
-    width: calc( 100% - 2em );
+    width: 100%;
     z-index: 10;
+}
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .topbar h1 {
@@ -66,7 +82,7 @@ body {
 }
 
 .nav li {
-    margin-right: 2em;
+    margin-left: 2em;
 }
 
 .nav a {
@@ -92,7 +108,7 @@ body {
     padding-top: 0.2em;
     justify-content: center;
     flex-wrap: wrap;
-    min-height: 80vh;
+    min-height: 90vh;
 }
 
 .pres {
@@ -125,7 +141,7 @@ body {
 
 .lselem img {
     padding-right: 1em;
-    width: 1em;
+    width: 3em;
 
 }
 
@@ -147,17 +163,43 @@ body {
     overflow: hidden;
 }
 
-#oasis #card-bg{
-    background: center / cover no-repeat url("res/oasis.png");
-    filter: blur(0px);
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-    height: 100%;
+.pf-card:not(.cardimg) {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-#oasis #card-bg:hover {
-    filter: blur(10px);
-    transition: all 0.2s ease-in-out;
+#oasis {
+    background-color: #371102;
+    border: 1px solid #523a2f;
+}
+
+#oasis .cardimg {
+    background: center / cover no-repeat url("res/oasis.png");
+    width: 100%;
+    height: 50%;
+}
+
+#ribot {
+    background-color: #55c661;
+    border: 1px solid #86e090;
+    color:black;
+}
+
+#ribot .cardimg {
+    background: center / cover no-repeat url("res/ribot.png");
+    width: 100%;
+    height: 50%;
+}
+
+#huh {
+    background-color: #000000;
+    border: 1px solid #1b1b1b;
+}
+
+#huh .cardimg {
+    /*background: center / cover no-repeat url("res/huh.png");*/
+    width: 100%;
+    height: 50%;
 }
 
 .skills {
@@ -215,4 +257,48 @@ ul {
     position: sticky;
     top: 0;
     width: 100%;
+}
+
+
+.botheading {
+    background-color: rgba(42, 42, 42, 0.5);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    padding: 1em 15% 1em 15%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+.botbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botnav {
+    list-style-type: none;
+    display: flex;
+}
+
+.botnav li {
+    margin-left: 1em;
+}
+
+.botnav a {
+    /*padding-bottom: 3px;*/
+    color:white;
+    text-decoration: none;
+}
+
+.botcredits {
+    display: flex;
+    align-items: center;
+}
+
+.botcredits p {
+    padding-left: 1em;
 }
