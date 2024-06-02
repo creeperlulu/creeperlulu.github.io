@@ -57,7 +57,7 @@ body {
     background-color: rgba(42, 42, 42, 0.5);
     backdrop-filter: blur(10px);
     position: sticky;
-    padding: 1em 15% 1em 15%;
+    padding: 1em 15%;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -72,10 +72,6 @@ body {
     justify-content: space-between;
 }
 
-.topbar h1 {
-    margin-left: 1em;
-}
-
 .nav {
     list-style-type: none;
     display: flex;
@@ -86,18 +82,61 @@ body {
 }
 
 .nav a {
-    /*padding-bottom: 3px;*/
-    color:white;
+    color: white;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
 
 .nav a:hover {
-    /*padding-bottom: 3px;*/
     color: #FF0000;
     text-decoration: none;
     text-shadow: 0px 0px 5px #FF0000;
     transition: all 0.2s ease-in-out;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+        width: 100%;
+        background-color: rgba(42, 42, 42, 0.5);
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar .nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar .nav li {
+        margin: 0;
+        padding: 1em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+    }
+
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
 }
 
 .heyimepson {
@@ -108,7 +147,7 @@ body {
     padding-top: 0.2em;
     justify-content: center;
     flex-wrap: wrap;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .pres {
@@ -125,6 +164,7 @@ body {
 .chillimg {
     width: 19em;
     animation: 3s infinite alternate balance ease-in-out;
+    min-width: 100px;
 }
 
 .about {
@@ -154,6 +194,7 @@ body {
 .pf-cards {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .pf-card {
@@ -161,6 +202,8 @@ body {
     width: 30%;
     height: 40vh;
     overflow: hidden;
+    
+    min-width: 300px;
 }
 
 .pf-card:not(.cardimg) {
@@ -282,6 +325,7 @@ ul {
 .botnav {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .botnav li {

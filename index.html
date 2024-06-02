@@ -11,7 +11,12 @@
 <body>
     <header class="heading">
         <div class="topbar" id="topbar">
-            <img src="res/Signature_white.png" width="50em">
+            <img src="res/Signature_white.png" width="50em" id="signature">
+            <audio id="beep" src="res/protogen.mp3"></audio>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                &#9776;
+            </label>
             <div class="navbar">
                 <ul class="nav">
                     <li><a href="#about">About</a></li>
@@ -23,62 +28,71 @@
         </div>
     </header>
     <main>
-    <div class="heyimepson">
-        <img src="res/chill.png" class="chillimg" alt="Art of my fursona Epson by @anakin.zw on Discord"
-            title="Art of my fursona Epson by @anakin.zw on Discord" />
-        <div class="pres">
-            <h1>Hey, I'm <br><span class="red emph">Epson</span></h1>
-            <p>Known as Creeperlulu on the Internet, but you can also call me:</p>
-            <ul>
-                <li>Your local not-so protogen</li>
-                <li>Uninspired programmer</li>
-                <li>The man who started with Java</li>
-                <li>Weirdest printer</li>
-            </ul>
+        <div class="heyimepson">
+            <img src="res/chill.png" class="chillimg" alt="Art of my fursona Epson by @anakin.zw on Discord"
+                title="Art of my fursona Epson by @anakin.zw on Discord" />
+            <div class="pres">
+                <h1>Hey, I'm <br><span class="red emph">Epson</span></h1>
+                <p>Known as Creeperlulu on the Internet, but you can also call me:</p>
+                <ul>
+                    <li>Your local not-so protogen</li>
+                    <li>Uninspired programmer</li>
+                    <li>The man who started with Java</li>
+                    <li>Weirdest printer</li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="about" id="about">
-        <h1>About <span class="red">me</span></h1>
-        <div class="lselem">
-            <img src="res/ico/me.png" />
-            <p>My real name is <b>Lucas</b>, also known as <b>Creeperlulu</b> on most of my socials and on the Internet
-                in general. I'm <b>French</b>, but I prefer to use <b>english</b> as my main language on the Internet. I
-                mostly talk in french in real life. I am also <b>colorblind</b> (protan).</p>
+        <div class="about" id="about">
+            <h1>About <span class="red">me</span></h1>
+            <div class="lselem">
+                <img src="res/ico/me.png" />
+                <p>My real name is <b>Lucas</b>, also known as <b>Creeperlulu</b> on most of my socials and on the
+                    Internet
+                    in general. I'm <b>French</b>, but I prefer to use <b>english</b> as my main language on the
+                    Internet. I
+                    mostly talk in french in real life. I am also <b>colorblind</b> (protan).</p>
+            </div>
+            <div class="lselem">
+                <img src="res/ico/hobbies.png" />
+                <p>I'm a <b>furry</b>, my fursona is named <b>Epson</b> and is a derivative of the <b>protogen</b>
+                    species.
+                    I am also kind of a <b>tech guy</b>, sometimes a <b>designer</b>, an <b>artist</b>, and so on and so
+                    forth. I'm kind of a <b>jack-of-all-trades</b>.</p>
+            </div>
+            <div class="lselem">
+                <img src="res/ico/dev.png" />
+                <p>I started programming at age <b>8 to 9</b>, even though I used <b>Scratch</b> as my first
+                    programmming
+                    tool. <b></b> The first real programming language I learned (or at least tried to learn) was
+                    <b>Java</b>.
+                </p>
+            </div>
+            <div class="lselem">
+                <img src="res/ico/like.png" />
+                <p>I like <b>designing random things</b>, such as projects I know I will probably not make. I also
+                    <b>code</b> sometimes, even though I often have <b>oversized</b> ideas that I'm not able to <b>make
+                        by
+                        myself</b>. Finally, I <b>draw</b> when I have some time. You can check some of my art and
+                    projects
+                    in my <a href="#portfolio">portfolio</a>. I also like <b>video games</b> such as <b>Minecraft</b>,
+                    which
+                    is my all-time favorite.
+                </p>
+            </div>
+            <div class="lselem">
+                <img src="res/ico/dislike.png" />
+                <p>This might surprise you, but I don't like <b>math</b> in general, even though I used to. <b>School
+                        made
+                        me hate it</b>, I guess. Something obvious that I don't like is <b>haters</b>.</p>
+            </div>
         </div>
-        <div class="lselem">
-            <img src="res/ico/hobbies.png" />
-            <p>I'm a <b>furry</b>, my fursona is named <b>Epson</b> and is a derivative of the <b>protogen</b> species.
-                I am also kind of a <b>tech guy</b>, sometimes a <b>designer</b>, an <b>artist</b>, and so on and so
-                forth. I'm kind of a <b>jack-of-all-trades</b>.</p>
-        </div>
-        <div class="lselem">
-            <img src="res/ico/dev.png" />
-            <p>I started programming at age <b>8 to 9</b>, even though I used <b>Scratch</b> as my first programmming
-                tool. <b></b> The first real programming language I learned (or at least tried to learn) was
-                <b>Java</b>.
-            </p>
-        </div>
-        <div class="lselem">
-            <img src="res/ico/like.png" />
-            <p>I like <b>designing random things</b>, such as projects I know I will probably not make. I also
-                <b>code</b> sometimes, even though I often have <b>oversized</b> ideas that I'm not able to <b>make by
-                    myself</b>. Finally, I <b>draw</b> when I have some time. You can check some of my art and projects
-                in my <a href="#portfolio">portfolio</a>. I also like <b>video games</b> such as <b>Minecraft</b>, which
-                is my all-time favorite.
-            </p>
-        </div>
-        <div class="lselem">
-            <img src="res/ico/dislike.png" />
-            <p>This might surprise you, but I don't like <b>math</b> in general, even though I used to. <b>School made
-                    me hate it</b>, I guess. Something obvious that I don't like is <b>haters</b>.</p>
-        </div>
-    </div>
-    <div class="portfolio" id="portfolio">
-        <h1>My <span class="red">portfolio</span></h1>
-        <div class="pf-cards">
-            <div class="pf-card" id="oasis">
+        <div class="portfolio" id="portfolio">
+            <h1>My <span class="red">portfolio</span></h1>
+            <div class="pf-cards">
+                <div class="pf-card" id="oasis">
 
-                <div class="cardimg"/></div>
+                    <div class="cardimg" />
+                </div>
                 <h1>Oasis</h1>
                 <p>Custom operating system based on the Android Open Source Projet with a lot of useful features for
                     mobile devices.</p>
@@ -86,49 +100,63 @@
 
             <div class="pf-card" id="ribot">
 
-                <div class="cardimg"/></div>
-                <h1>RIBOT</h1>
-                <p>AI chatbot application, that can learn to be as realistic as possible. Meet your new friend.</p>
+                <div class="cardimg" />
             </div>
-            <div class="pf-card" id="huh">
-
-                <div class="cardimg"/></div>
-                <h1>?</h1>
-                <p>?</p>
-            </div>
+            <h1>RIBOT</h1>
+            <p>AI chatbot application, that can learn to be as realistic as possible. Meet your new friend.</p>
         </div>
-    </div>
-    <div class="skills" id="skills">
-        <h1>My <span class="red">skills</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim
-            sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius
-            a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non
-            fermentum diam nisl sit amet erat. Duis semper.</p>
-    </div>
-    <div class="socials" id="socials">
-        <h1>My <span class="red">socials</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim
-            sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius
-            a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non
-            fermentum diam nisl sit amet erat. Duis semper.</p>
-    </div>
+        <div class="pf-card" id="huh">
 
-</main>
-<header class="botheading">
-    <div class="botbar" id="botbar">
-        <div class="botcredits"><img src="res/Signature_white.png" width="50em">
-        <p>© 2024 Creeperlulu | All rights reserved.</p></div>
+            <div class="cardimg" />
+        </div>
+        <h1>?</h1>
+        <p>?</p>
+        </div>
+        </div>
+        </div>
+        <div class="skills" id="skills">
+            <h1>My <span class="red">skills</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                dignissim
+                sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa,
+                varius
+                a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non
+                fermentum diam nisl sit amet erat. Duis semper.</p>
+        </div>
+        <div class="socials" id="socials">
+            <h1>My <span class="red">socials</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                dignissim
+                sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa,
+                varius
+                a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non
+                fermentum diam nisl sit amet erat. Duis semper.</p>
+        </div>
+
+    </main>
+    <header class="botheading">
+        <div class="botbar" id="botbar">
+            <div class="botcredits">
+                <img src="res/Signature_white.png" width="50em" id="signature">
+                <p>© 2024 Creeperlulu | All rights reserved.</p>
+            </div>
             <ul class="botnav">
                 <li><a href="https://github.com/creeperlulu"><img src="res/ico/github.png" width="30em"></a></li>
-                <li><a href="https://discord.com/users/455843576811880458"><img src="res/ico/discord.png" width="30em"></a></li>
+                <li><a href="https://discord.com/users/455843576811880458"><img src="res/ico/discord.png"
+                            width="30em"></a></li>
                 <li><a href="https://twitter.com/Creeperlulu"><img src="res/ico/twitter.png" width="30em"></a></li>
-                <li><a href="https://www.instagram.com/creeperlulu"><img src="res/ico/instagram.png" width="30em"></a></li>
-                <li><a href="https://www.tiktok.com/@creeperprinting"><img src="res/ico/tiktok.png" width="30em"></a></li>
+                <li><a href="https://www.instagram.com/creeperlulu"><img src="res/ico/instagram.png" width="30em"></a>
+                </li>
+                <li><a href="https://www.tiktok.com/@creeperprinting"><img src="res/ico/tiktok.png" width="30em"></a>
+                </li>
             </ul>
-    </div>
-</header>
+        </div>
+    </header>
     <script>
-
+        document.getElementById('signature').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('beep').play();
+        });
     </script>
 </body>
 
