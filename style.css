@@ -1,3 +1,7 @@
+@font-face { font-family: Montserrat; src: url('res/fonts/Montserrat.ttf'); } 
+@font-face { font-family: "Montserrat Semibold"; src: url('res/fonts/Montserrat-SemiBold.ttf');}
+@font-face { font-family: "Montserrat Extrabold"; src: url('res/fonts/Montserrat-ExtraBold.ttf');}
+
 ::-webkit-scrollbar {
     width: 10px;
 	background-color: #2a2a2a;
