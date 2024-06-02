@@ -1,12 +1,24 @@
-@font-face { font-family: Montserrat; src: url('res/fonts/Montserrat.ttf'); } 
-@font-face { font-family: "Montserrat Semibold"; src: url('res/fonts/Montserrat-SemiBold.ttf');}
-@font-face { font-family: "Montserrat Extrabold"; src: url('res/fonts/Montserrat-ExtraBold.ttf');}
+@font-face {
+    font-family: "Montserrat";
+    src: url('res/fonts/Montserrat.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat Semibold";
+    src: url('res/fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat Extrabold";
+    src: url('res/fonts/Montserrat-ExtraBold.ttf');
+}
 
 ::-webkit-scrollbar {
     width: 10px;
-	background-color: #2a2a2a;
-	opacity:0;
+    background-color: #2a2a2a;
+    opacity: 0;
 }
+
 ::-webkit-scrollbar-thumb {
     margin: 120px;
     border-radius: 25px;
@@ -15,13 +27,13 @@
 
 @keyframes balance {
     from {
-      rotate: -5deg;
+        rotate: -5deg;
     }
-  
+
     to {
-      rotate: 5deg;
+        rotate: 5deg;
     }
-  }
+}
 
 /*@keyframes blink {
     0% {
@@ -50,6 +62,7 @@ main {
     margin-right: auto;
     width: 70%;
 }
+
 body {
     background-image: url(res/meshgradient.png);
     color: white;
@@ -135,7 +148,7 @@ body {
         color: white;
     }
 
-    .menu-toggle:checked + .menu-icon + .navbar {
+    .menu-toggle:checked+.menu-icon+.navbar {
         display: block;
         position: absolute;
         top: 100%;
@@ -156,20 +169,19 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    
+
     .heyimepson .about .portfolio .skills .social {
         padding: 2em
     }
 
-    .heyimepson{
+    .heyimepson {
         min-height: 90vh;
         align-items: center;
-        
-    padding-top: 0.2em;
+        padding-top: 0.2em;
     }
 
-    .chillimg{
-        max-width: 19em !important; 
+    .chillimg {
+        max-width: 19em !important;
     }
 }
 
@@ -178,14 +190,14 @@ body {
     flex-direction: column;
     padding-left: 10%;
     text-overflow: ellipsis;
-    background-size: 0% 100%; 
+    background-size: 0% 100%;
     animation: 3s textappear ease-in-out;
 }
 
 .chillimg {
     max-width: 13em;
     animation: 3s infinite alternate balance ease-in-out;
-    
+
 }
 
 .about {
@@ -244,7 +256,7 @@ body {
 #ribot {
     background-color: #55c661;
     border: 1px solid #86e090;
-    color:black;
+    color: black;
 }
 
 #ribot .cardimg {
@@ -290,7 +302,7 @@ p a {
 }
 
 p a:hover {
-    
+
     text-decoration: none;
     text-shadow: 0px 0px 5px #FF0000;
     transition: all 0.2s ease-in-out;
@@ -352,7 +364,7 @@ ul {
 
 .botnav a {
     /*padding-bottom: 3px;*/
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
