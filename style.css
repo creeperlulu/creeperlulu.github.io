@@ -102,6 +102,7 @@ body {
     display: none;
     font-size: 2em;
     cursor: pointer;
+    user-select: none;
 }
 
 .menu-toggle {
@@ -147,36 +148,50 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 3em;
-    padding-top: 0.2em;
+    padding-top: 3em;
     justify-content: center;
     flex-wrap: wrap;
     min-height: 100vh;
+    align-items: flex-start;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .heyimepson .about .portfolio .skills .social {
+        padding: 2em
+    }
+
+    .heyimepson{
+        min-height: 90vh;
+        align-items: center;
+        
+    padding-top: 0.2em;
+    }
+
+    .chillimg{
+        max-width: 19em !important; 
+    }
 }
 
 .pres {
     display: flex;
     flex-direction: column;
     padding-left: 10%;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
     background-size: 0% 100%; 
     animation: 3s textappear ease-in-out;
-    
-    
 }
 
 .chillimg {
-    width: 19em;
+    max-width: 13em;
     animation: 3s infinite alternate balance ease-in-out;
-    min-width: 100px;
+    
 }
 
 .about {
     display: flex;
     flex-direction: column;
-    padding: 2em;
 }
-
 
 .about .lselem {
     display: flex;
@@ -206,7 +221,7 @@ body {
     width: 30%;
     height: 40vh;
     overflow: hidden;
-    
+    margin-bottom: 2em;
     min-width: 300px;
 }
 
@@ -252,13 +267,11 @@ body {
 .skills {
     display: flex;
     flex-direction: column;
-    padding: 2em;
 }
 
 .socials {
     display: flex;
     flex-direction: column;
-    padding: 2em;
 }
 
 h1 {
@@ -324,6 +337,7 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .botnav {
