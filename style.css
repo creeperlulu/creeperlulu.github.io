@@ -219,7 +219,6 @@ body {
 .portfolio {
     display: flex;
     flex-direction: column;
-    padding: 2em;
 }
 
 .pf-cards {
@@ -235,6 +234,7 @@ body {
     overflow: hidden;
     margin-bottom: 2em;
     min-width: 300px;
+    min-height: 400px;
 }
 
 .pf-card:not(.cardimg) {
