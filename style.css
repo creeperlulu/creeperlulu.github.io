@@ -243,35 +243,41 @@ body {
 }
 
 #oasis {
-    background-color: #371102;
+    background-image: url(res/oasisgradient.png);
+    background-size: 100% 100%;
     border: 1px solid #523a2f;
 }
 
 #oasis .cardimg {
-    background: center / cover no-repeat url("res/oasis.png");
+    background: center / contain no-repeat url("res/oasis.png");
     width: 100%;
-    height: 50%;
+    height: 40%;
+    margin-top: 10%;
 }
 
 #ribot {
-    background-color: #55c661;
+    background-image: url(res/ribotgradient.png);
+    background-size: 100% 100%;
     border: 1px solid #86e090;
     color: black;
 }
 
 #ribot .cardimg {
-    background: center / cover no-repeat url("res/ribot.png");
+    background: center / contain no-repeat url("res/ribot.png");
     width: 100%;
-    height: 50%;
+    height: 30%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 #huh {
-    background-color: #000000;
+    background-image: url(res/unknowngradient.png);
+    background-size: 100% 100%;
     border: 1px solid #1b1b1b;
 }
 
 #huh .cardimg {
-    /*background: center / cover no-repeat url("res/huh.png");*/
+    /*background: center / contain no-repeat url("res/huh.png");*/
     width: 100%;
     height: 50%;
 }
