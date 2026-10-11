@@ -220,7 +220,7 @@ body {
     z-index: -1;
     position: absolute;
     background-color: hsla(120, 0%, 8%, 1);
-    background-image: radial-gradient(circle at 82.43021581364773% 75.76318796229208%, hsla(300, 0%, 12%, 1) 1%, transparent 65%), radial-gradient(circle at 10.344828682384271% 12.949525454489942%, hsla(343, 0%, 16%, 1) 2%, transparent 104%), radial-gradient(circle at 35.90585810928052% 72.70901080673725%, hsla(0, 100%, 50%, 1) 58%, transparent 94%), radial-gradient(circle at 97.86364493242169% 3.4184188960154755%, hsla(180, 100%, 49%, 1) 3%, transparent 79%);
+    background-image: radial-gradient(circle at 82.70389184184458% 91.02683110865321%, hsla(300, 0%, 12%, 1) 1%, transparent 71%), radial-gradient(circle at 8.100712436369095% 23.40280895035102%, hsla(343, 0%, 16%, 1) 2%, transparent 75%), radial-gradient(circle at 17.296116196789505% 78.90697415506997%, hsla(0, 100%, 50%, 1) 23%, transparent 94%), radial-gradient(circle at 84.34421166606333% 22.565909551489426%, hsla(180, 100%, 49%, 1) 15%, transparent 105%);
     background-blend-mode: normal, normal, normal, normal;
 
     mask:
@@ -230,7 +230,7 @@ body {
         radial-gradient(84.97px at 50% calc(100% + 76px),#0000 99%,#000 101%) calc(50% - 76px) calc(100% - 38px)/152px calc(51% - 38px) repeat-x;
 
     transform: rotate(-20deg);
-    width: 200vw;
+    width: 130vw;
     animation: move 2s linear;
     animation-iteration-count: infinite;
     overflow: hidden;
