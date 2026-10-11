@@ -463,7 +463,7 @@ ul {
     border: 1px solid #63a6c7;
 }
 
-#twitter .sccard-info { 
+#twitter .sccard-info {
     backdrop-filter: blur(5px);
     border-radius: 15px;
 }
@@ -505,4 +505,69 @@ ul {
     .social-card .sctype img {
         width: 20px;
     }
+}
+
+.signature {
+    width: 3em;
+}
+
+.signature .draw, .signature .draw-reverse {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1px;
+    animation: draw 1.5s ease-in-out forwards;
+}
+
+.signature .fade {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 45px;
+    opacity: 0%;
+    animation: fade 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+.draw {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+}
+
+.draw-reverse {
+    stroke-dasharray: 1;
+    stroke-dashoffset: -1;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+        stroke-width: 45px;
+    }
+}
+
+@keyframes fade {
+    to {
+        opacity: 100%;
+    }
+}
+
+.signature .logo_hair:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.signature .logo_hair:nth-child(2) {
+  animation-delay: 0.7s;
+}
+.signature .logo_hair:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.signature .logo_fluff:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.signature .logo_fluff:nth-child(7) {
+  animation-delay: 0.7s;
 }
