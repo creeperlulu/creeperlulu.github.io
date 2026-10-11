@@ -230,7 +230,7 @@ body {
         radial-gradient(84.97px at 50% calc(100% + 76px),#0000 99%,#000 101%) calc(50% - 76px) calc(100% - 38px)/152px calc(51% - 38px) repeat-x;
 
     transform: rotate(-20deg);
-    width: 130vw;
+    width: 200vw;
     animation: move 2s linear;
     animation-iteration-count: infinite;
     overflow: hidden;
@@ -266,6 +266,10 @@ body {
         min-height: 93vh;
         align-items: center;
         padding-top: 0.2em;
+    }
+
+    .heyimepson::before {
+        width: 150vw;
     }
 
     .chillimg {
