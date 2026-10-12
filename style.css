@@ -206,12 +206,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 3em;
     justify-content: center;
     flex-wrap: wrap;
     min-height: 100vh;
     align-items: flex-start;
     overflow: hidden;
+    margin-top: -92px;
+    padding-top: calc(0.2em + 65px);
 }
 
 .heyimepson::before {
@@ -263,7 +264,7 @@ body {
     }
 
     .heyimepson {
-        min-height: 93vh;
+        min-height: 100vh;
         align-items: center;
         padding-top: 0.2em;
     }
